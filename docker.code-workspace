@@ -1,0 +1,19 @@
+{
+	"folders":[
+		{
+			"path":"."
+		}
+	],
+	"settings": {
+        "workbench.colorTheme": "One Dark Pro Darker",
+        "workbench.iconTheme": "material-icon-theme",
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-azuretools.vscode-docker",
+            "ms-vscode-remote.remote-containers",
+            "zhuangtongfa.material-theme",
+            "PKief.material-icon-theme"
+        ]
+    }
+}
