@@ -1,8 +1,12 @@
 # Ejemplo de dockerfile para crear una imagen de docker con una base de datos MySQL
-FROM baseImage:latest
+# FROM baseImage:latest
+FROM mariadb:latest
 
 # Copia los archivos SQL para inicializar la base de datos en la imagen
+# Así como los archivos específicos
 COPY schema.sql /docker-entrypoint-initdb.d/schema.sql
+# y los directorios de datos
+COPY init /docker-entrypoint-initdb.d/
 
 # environment variables
 ENV MYSQL_ROOT_PASSWORD=123456
